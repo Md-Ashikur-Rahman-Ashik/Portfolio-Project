@@ -11,6 +11,10 @@ const Works = () => {
       })
       .then((res) => {
         console.log(res);
+        const redirectURL = res.data.paymentURL;
+        if (redirectURL) {
+          window.location.replace(redirectURL);
+        }
       });
   };
 
