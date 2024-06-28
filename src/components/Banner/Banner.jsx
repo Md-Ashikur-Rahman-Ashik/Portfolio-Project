@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Banner = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -21,8 +21,9 @@ const Banner = () => {
           clickable: true,
         }}
         navigation={true}
+        loop={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper rounded-xl"
       >
         <SwiperSlide>
           <img src="https://i.ibb.co/LpVTbKM/first-Slide.png" alt="" />
